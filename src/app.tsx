@@ -9,13 +9,26 @@ async function addSticky() {
   await miro.board.viewport.zoomTo(stickyNote);
 }
 
+async function embedTest() {
+  const file = await miro.board.createEmbed({
+    url: "https://www.orimi.com/pdf-test.pdf",
+    previewUrl: "https://res.cloudinary.com/dbiudcrba/image/upload/v1687099381/brett-jordan-kuEMUoDZepY-unsplash_bssoya.jpg",
+    mode: "inline",
+  })
+
+  await miro.board.viewport.zoomTo(file)
+}
+
 const App: React.FC = () => {
   React.useEffect(() => {
-    addSticky();
+    //addSticky();
+    embedTest();
   }, []);
 
   return (
     <div className="grid wrapper">
+      <h1>Test</h1>
+      <input type="text" />
       <div className="cs1 ce12">
         <img src="/src/assets/congratulations.png" alt="" />
       </div>
