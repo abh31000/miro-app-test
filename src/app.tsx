@@ -11,7 +11,7 @@ async function addSticky() {
 
 async function embedTest() {
   const file = await miro.board.createEmbed({
-    url: "https://www.orimi.com/pdf-test.pdf",
+    url: "https://www.youtube.com/watch?v=Mk1Df4VDdrI&ab_channel=KenCarsonVEVO",
     previewUrl: "https://res.cloudinary.com/dbiudcrba/image/upload/v1687099381/brett-jordan-kuEMUoDZepY-unsplash_bssoya.jpg",
     mode: "inline",
   })
